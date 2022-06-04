@@ -39,6 +39,23 @@ body{
     color: white;
     height: 100%;
 }
+.menu-desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.menu3{
+    background: #01579b;
+}
+.sub-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
 .section{
     background: #e0e0e0;
     display: flex;
