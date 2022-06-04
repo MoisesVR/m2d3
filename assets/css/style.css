@@ -49,6 +49,18 @@ body{
 .menu3{
     background: #01579b;
 }
+.menu2{
+    background: #01579b;
+}
+.menu-ipad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .sub-menu{
     display: flex;
     flex-direction: column;
