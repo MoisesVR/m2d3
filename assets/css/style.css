@@ -49,6 +49,18 @@ body{
 .menu3{
     background: #01579b;
 }
+.menu2{
+    background: #01579b;
+}
+.menu-ipad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .sub-menu{
     display: flex;
     flex-direction: column;
@@ -168,4 +180,91 @@ section select{
 }
 .rss i{
     margin: 10px;
+}
+@media (max-width:767px){
+    .menu2{
+        display: none;
+    }
+    .menu3{
+        display: none;
+    }
+    .producto1{
+        display: none;
+    }
+    .producto2{
+        display: none;
+    }
+    .producto3{
+        display: none;
+    }
+    .producto4{
+        display: none;
+    }
+    .producto5{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    body{
+        grid-template-areas: 
+            "menu-nav menu-nav"
+            "seccion-filtros seccion-principal"
+            "seccion-filtros seccion-principal"
+            "footer footer";
+        grid-template-rows: 1fr 5fr 5fr;
+    }
+    .section{
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+    .sub-menu{
+        flex-direction: row;
+    }
+    .menu{
+        display: none;
+    }
+    .menu3{
+        display: none;
+    }
+    .producto1{
+        display: none;
+    }
+    .producto2{
+        display: none;
+    }
+    .producto3{
+        display: none;
+    }
+    .producto4{
+        display: none;
+    }
+
+}
+@media (min-width: 992px){
+    body{
+        grid-template-areas:
+            "menu-nav seccion-filtros"
+            "menu-nav seccion-principal"
+            "menu-nav seccion-principal"
+            "footer seccion-principal ";
+        grid-template-columns: 1fr 4fr;
+    }
+    .main{
+        justify-content: center;
+        flex-direction: row;
+    }
+    .main *{
+        width: 100%;
+        margin: 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu2{
+        display: none;
+    }
+    .producto5{
+        display: none;
+    }
 }
